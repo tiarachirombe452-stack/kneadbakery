@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send an enquiry to Knead Bakery & Café - catering, wholesale, event bookings and general questions.">
+    <title>Knead Bakery & Café | Enquiry</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Knead Bakery <span>& Café</span></a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Menu</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Make an Enquiry</h1>
+                <p>Catering, wholesale, events, or just a question? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <!-- Enquiry Form Section -->
+        <section class="form-section">
+            <div class="container">
+
+                <form action="#" method="post" class="enquiry-form">
+
+                    <!-- Personal Details -->
+                    <fieldset>
+                        <legend>Your Details</legend>
+
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Sarah Johnson" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="021 123 4567">
+                        </div>
+                    </fieldset>
+
+                    <!-- Enquiry Details -->
+                    <fieldset>
+                        <legend>Your Enquiry</legend>
+
+                        <div class="form-group">
+                            <label for="subject">Type of Enquiry *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Please select --</option>
+                                <option value="catering">Catering for an Event</option>
+                                <option value="wholesale">Wholesale / Bulk Order</option>
+                                <option value="booking">Venue Booking</option>
+                                <option value="general">General Question</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to be contacted about my enquiry.</label>
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info">
+            <div class="container">
+                <h2>Other Ways to Reach Us</h2>
+                <p>Prefer to talk? Call us on <strong>021 213 0015</strong> or email <strong>info@kneadbakery.co.za</strong>.</p>
+                <p>For urgent wholesale orders, please call your nearest store directly — details on our <a href="contact.html">Contact page</a>.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Knead Bakery & Café</h4>
+                <p>Artisan bakery since 2006.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Menu</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>info@kneadbakery.co.za</p>
+                <p>021 213 0015</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Knead Bakery & Café. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
