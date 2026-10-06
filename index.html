@@ -128,6 +128,89 @@
 
     <!-- External JavaScript (Part 3 will fill this in) -->
     <script src="js/script.js"></script>
+/* =========================================================
+   5. HEADER & NAVIGATION
+   ========================================================= */
+.site-header {
+    background-color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
 
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+}
+
+/* Logo */
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    font-weight: 400;
+    color: var(--color-accent);
+    font-style: italic;
+}
+
+.logo:hover {
+    color: var(--color-primary);
+}
+
+/* Navigation */
+.main-nav ul {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.main-nav a {
+    font-size: var(--fs-body);
+    font-weight: 400;
+    color: var(--color-text);
+    padding: var(--spacing-xs) 0;
+    position: relative;
+    transition: color var(--transition);
+}
+
+/* Animated underline on hover */
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width var(--transition);
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+/* Active page highlight */
+.main-nav a.active {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.main-nav a.active::after {
+    width: 100%;
+}
 </body>
 </html>
