@@ -13,6 +13,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 
@@ -48,10 +49,10 @@
         <section class="locations">
             <div class="container">
                 <h2>Our Stores</h2>
-
+<div id="map" style="height: 400px; width: 100%; margin-bottom: 2rem; border-radius: 8px; z-index: 1;"></div>
                 <div class="locations-grid">
 
-                    <article class="location-card">
+                    <article class="location-card" id="card-constantia" onclick="focusLocation('constantia')" style="cursor: pointer;">
                         <h3>Constantia Emporium</h3>
                         <p class="location-address">Cnr Ladies Mile & Spaanschemat River Road, Constantia</p>
                         <p class="location-contact">
@@ -64,7 +65,7 @@
                         </p>
                     </article>
 
-                    <article class="location-card">
+                   <article class="location-card" id="card-muizenberg" onclick="focusLocation('muizenberg')" style="cursor: pointer;">
                         <h3>Muizenberg</h3>
                         <p class="location-address">Surfer's Corner, Beach Road, Muizenberg</p>
                         <p class="location-contact">
@@ -76,7 +77,7 @@
                         </p>
                     </article>
 
-                    <article class="location-card">
+                   <article class="location-card" id="card-panorama" onclick="focusLocation('panorama')" style="cursor: pointer;">
                         <h3>Panorama</h3>
                         <p class="location-address">Panorama, Cape Town</p>
                         <p class="location-contact">
@@ -88,7 +89,7 @@
                         </p>
                     </article>
 
-                    <article class="location-card">
+                   <article class="location-card" id="card-sanlam" onclick="focusLocation('sanlam')" style="cursor: pointer;">
                         <h3>Sanlam</h3>
                         <p class="location-address">Sanlam, Cape Town</p>
                         <p class="location-contact">
@@ -99,7 +100,7 @@
                         </p>
                     </article>
 
-                    <article class="location-card">
+                   <article class="location-card" id="card-newlands" onclick="focusLocation('newlands')" style="cursor: pointer;">
                         <h3>Newlands</h3>
                         <p class="location-address">Newlands, Cape Town</p>
                         <p class="location-contact">
